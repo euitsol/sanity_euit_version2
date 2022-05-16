@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Aboutus from './pages/Aboutus/Aboutus';
-import Header from './pages/Home/Header/Header';
+import Header from './Header/Header';
 import Home from './pages/Home/Home/Home';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/aboutus' element={<Aboutus></Aboutus>}></Route>
+        <Route path='/about' element={<Aboutus></Aboutus>}></Route>
       </Routes>
     </div>
   );
