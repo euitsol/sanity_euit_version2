@@ -2,6 +2,7 @@ import { faEnvelope, faMobileAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import './Header.css'
+import eidofferimg from '../../../images/euit-eid-offer.png'
 
 function Header() {
   return (
@@ -31,10 +32,10 @@ function Header() {
           <div className="menu-slider">
               {/* <div className="menu-bar">
                   <Menu></Menu>
-              </div>
-              <div className="slider">
-                  <Slider></Slider>
               </div> */}
+              <div className='banner'>
+                  <img src={eidofferimg} alt=''></img>
+              </div>
 
           </div>
       </div>

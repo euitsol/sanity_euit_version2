@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px 45px;
+    padding: 20px 100px;
 }
 .phone-number, .mail-section{
     display: flex;
@@ -18,6 +18,9 @@
     border: 2px solid #486d8a;
     padding: 10px;
     border-radius: 50%;
+}
+.basis-logo{
+    align-items: center;
 }
 .basis-logo img{
     width: 150px;
