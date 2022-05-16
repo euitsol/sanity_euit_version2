@@ -2,14 +2,14 @@ import { faEnvelope, faMobileAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import './Header.css'
-import eidofferimg from '../../../images/euit-eid-offer.png'
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
     <div className="header">
           <div className='header-top'>
               <div className="logo">
-                  <img src="https://europeanit-inst.com/wp-content/uploads/2020/02/logo-large-TM.png-300.png" alt="logo" />
+                  <Link to='/'><img src="https://europeanit-inst.com/wp-content/uploads/2020/02/logo-large-TM.png-300.png" alt="logo" /></Link>
               </div>
               <div className="phone-number">
                   <FontAwesomeIcon className='icon' icon={faMobileAlt}></FontAwesomeIcon>
@@ -33,10 +33,6 @@ function Header() {
               {/* <div className="menu-bar">
                   <Menu></Menu>
               </div> */}
-              <div className='banner'>
-                  <img src={eidofferimg} alt=''></img>
-              </div>
-
           </div>
       </div>
   )
