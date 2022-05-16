@@ -3,6 +3,7 @@ import aboutUs from '../../images/About-Us-Image.jpg'
 import './Aboutus.css'
 import mamunImage from '../../images/Mamun-Ur-Rashid.png'
 import sandeepImage from '../../images/SANDEEP_CHOWDHURY.png'
+import Facilities from '../../Facilities/Facilities'
 
 function Aboutus() {
   return (
@@ -38,6 +39,7 @@ function Aboutus() {
                 </div>
             </div>
         </div>
+        <Facilities></Facilities>
     </div>
   )
 }

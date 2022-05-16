@@ -1,0 +1,20 @@
+.facility{
+    text-align: start;
+    padding: 20px;
+}
+.facility img{
+    width: 34px;
+
+}
+.facility-title{
+    color: #3C6382;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 34px;
+}
+.facility-detail{
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}

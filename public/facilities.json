@@ -1,0 +1,38 @@
+[
+    {
+        "id":1,
+        "title": "24/7 Online Support",
+        "details": "Each time is very important to us. European IT is giving 24/7 online support for the students for any information review and solving problem.",
+        "icon": "fa-solid fa-timer"
+    },
+    {
+        "id": 2,
+        "title": "Lifetime Support",
+        "details": "By the end of the course, European IT provides life time support to its students for problem solving and collaborate.",
+        "icon": "fa-solid fa-headset"
+    },
+    {
+        "id": 3,
+        "title": "Practice Lab Support",
+        "details": "European IT is giving students a practice lab at the end of classes or at any time to practice. Where students will have the opportunity to practice for a long time.",
+        "icon": "fa-solid fa-desktop"
+    },
+    {
+        "id": 4,
+        "title": "Class Video",
+        "details": "Video for each class of European IT Institute is stored and provided to students. This will allow students to better understand the contents of the class.",
+        "icon": "fa-solid fa-film"
+    },
+    {
+        "id": 5,
+        "title": "Review Class",
+        "details": "European IT Institute has a review class system for improving the quality and skills of students.",
+        "icon": "fa-solid fa-users"
+    },
+    {
+        "id": 6,
+        "title": "Job Placement",
+        "details": "European IT manage job for talented students through their job placement cell at European IT's own firm as well as other firms.",
+        "icon": "fa-solid fa-briefcase"
+    }
+]
