@@ -1,0 +1,31 @@
+.header-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 45px;
+}
+.phone-number, .mail-section{
+    display: flex;
+    align-items: center;
+}
+.phone-number .icon,
+.mail-section .icon{
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    color: #486d8a;
+    margin-right: 20px;
+    border: 2px solid #486d8a;
+    padding: 10px;
+    border-radius: 50%;
+}
+.basis-logo img{
+    width: 150px;
+}
+.number p, .mail p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #486d8a;
+    cursor: pointer;
+    margin: 0;
+}
