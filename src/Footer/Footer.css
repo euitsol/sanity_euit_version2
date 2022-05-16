@@ -1,0 +1,31 @@
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #D3DEE9;
+}
+.motivate-speech img{
+    width: 340px;
+}
+.footer-content .social-icon{
+    height: 23px;
+    width: 23px;
+    margin: 5px 12px;
+    cursor: pointer;
+}
+.follow-us h2{
+    color: #3C6382;
+}
+
+.fa-brands{
+    color: #3C6382;
+    font-size: 22px;
+    margin: 5px 10px;
+}
+
+.copy-text{
+    background-color: #C8D6E5;
+    color: #3C6382;
+    padding: 20px 0;
+}

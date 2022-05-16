@@ -32,3 +32,18 @@
     box-shadow: 0px 0px 15px 0px rgb(171 171 171 / 50%);
     margin: 30px 10px;
 }
+
+.founder-name{
+    color: #3C6382;
+    font-weight: 800;
+}
+.founder-section .role{
+    font-size: 14px;
+    font-weight: bold;
+    color: #acacac;
+}
+.institute{
+    color: #00AEEF;
+    font-size: 14px;
+    margin-bottom: 30px;
+}

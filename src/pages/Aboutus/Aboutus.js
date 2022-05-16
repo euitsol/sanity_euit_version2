@@ -23,8 +23,8 @@ function Aboutus() {
                     <img src={mamunImage} alt='mamun sir'></img>
                 </div>
                 <div className='founder-info'>
-                    <h1 className='founder-name'>Md. Mamun Ur Rasid</h1>
-                    <h2 className='role'>Co-Founder & MD</h2>
+                    <p className='founder-name'>Md. Mamun Ur Rasid</p>
+                    <p className='role'>Co-Founder & MD</p>
                     <h3 className='institute'>European IT Solutions & Institute</h3>
                 </div>
             </div>
@@ -33,8 +33,8 @@ function Aboutus() {
                     <img src={sandeepImage} alt='sandeep sir'></img>
                 </div>
                 <div className='founder-info'>
-                    <h1 className='founder-name'>Md. Mamun Ur Rasid</h1>
-                    <h2 className='role'>Co-Founder & MD</h2>
+                    <p className='founder-name'>Sandeep Chowdhury</p>
+                    <p className='role'>Founder</p>
                     <h3 className='institute'>European IT Solutions & Institute</h3>
                 </div>
             </div>
