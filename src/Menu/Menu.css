@@ -111,8 +111,8 @@ nav .wrapper {
     background: #ffffff;
     border-top: 3px solid #00AEEF;
     padding: 25px 20px;
+    padding-left: 110px;
     display: flex;
-    width: 153%;
     justify-content: space-between;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
@@ -140,18 +140,20 @@ nav .wrapper {
 
 .row .mega-links li {
     display: flex;
+    border: 1px solid rgba(141, 141, 141, 0.356);
     align-items: center;
-    padding: 0;
+    border-radius: 3px;
+    padding: 0 10px;
     text-align: left;
-    padding: 0 55px;
+    margin: 10px 10px;
 }
 
 .row .mega-links li a {
-    padding: 0px;
-    padding: 0 20px;
+    padding: 10px 20px;
     color: #3c6386;
     font-size: 17px;
     display: block;
+    line-height: 22px;
 }
 
 .row .mega-links li a:hover {
@@ -184,6 +186,14 @@ nav .wrapper {
 }
 .menu-btn{
     color: black;
+}
+
+.fa-times{
+    color: black;
+}
+
+.right-arrow-icon{
+    color: #00AEEF;
 }
 
 @media screen and (max-width: 970px) {
