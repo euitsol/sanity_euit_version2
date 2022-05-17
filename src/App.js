@@ -7,6 +7,10 @@ import Footer from './Footer/Footer';
 import ContactUs from './pages/ContactUs/ContactUs';
 import Menu from './Menu/Menu';
 import AnnualTour from './Gallery/AnnualTour/AnnualTour';
+import FarewellProgramme from './Gallery/FearwellProgramme/FarewellProgramme';
+import JobFair from './Gallery/JobFair/JobFair';
+import MouSinging from './Gallery/MouSinging/MouSinging';
+import OfficeEnvironment from './Gallery/OfficeEnvironment/OfficeEnvironment';
 
 function App() {
   return (
@@ -18,6 +22,10 @@ function App() {
         <Route path='/about-us' element={<Aboutus></Aboutus>}></Route>
         <Route path='/contact-us' element={<ContactUs></ContactUs>}></Route>
         <Route path='/annual-tour' element={<AnnualTour></AnnualTour>}></Route>
+        <Route path='/farewell' element={<FarewellProgramme></FarewellProgramme>}></Route>
+        <Route path='/jobfair' element={<JobFair></JobFair>}></Route>
+        <Route path='/mousingingceremony' element={<MouSinging></MouSinging>}></Route>
+        <Route path='/officeenvironment' element={<OfficeEnvironment></OfficeEnvironment>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
