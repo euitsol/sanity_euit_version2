@@ -1,0 +1,36 @@
+.seminar-title{
+    text-align: start;
+    color: #3C6382;
+    background-color: #F8F8F8;
+    padding: 40px 0;
+    padding-left: 300px;
+}
+
+.seminar p{
+    color: #3C6382;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.seminar{
+    padding: 100px 0;
+}
+.seminar h2{
+    color: #3C6382;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.image-gallary{
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    display: block;
+}
+
+.image-gallary img{
+    height: 300px;
+    margin: 10px;
+}

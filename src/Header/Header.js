@@ -14,15 +14,15 @@ function Header() {
               <div className="phone-number">
                   <FontAwesomeIcon className='icon' icon={faMobileAlt}></FontAwesomeIcon>
                   <div className="number">
-                      <p>+880 188 99 77 951</p>
-                      <p>+880 188 99 77 952</p>
+                      <p>here your phone number</p>
+                      <p>here your phone number</p>
                   </div>
               </div>
               <div className="mail-section">
                   <FontAwesomeIcon className='icon' icon={faEnvelope}></FontAwesomeIcon>
                   <div className="mail">
-                      <p>info@europeanit-inst.com</p>
-                      <p>help@europeanit-inst.com</p>
+                      <p>here your email</p>
+                      <p>here your email</p>
                   </div>
               </div>
               <div className="basis-logo">

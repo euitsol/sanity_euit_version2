@@ -81,17 +81,17 @@ function Menu() {
 
             <li><a href="/">Events</a></li>
             <li>
-              <a href="/" className="desktop-item">Gallery <FontAwesomeIcon icon={faAngleDown} /></a>
+              <a href="/" className="desktop-item">Gallery<FontAwesomeIcon icon={faAngleDown} /></a>
               <input type="checkbox" id="showDrop" />
               <label for="showDrop" className="mobile-item">Gallery <FontAwesomeIcon icon={faAngleDown} /></label>
               <ul className="drop-menu">
                 <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/officeenvironment">Office Environment</Link></li>
-                <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">Orientation Programme</a></li>
-                <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">Teachers Training</a></li>
+                <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/orientation-programme">Orientation Programme</Link></li>
+                <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/teachers-training">Teachers Training</Link></li>
                 <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/farewell">Fearwell Programme</Link></li>
                 <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/mousingingceremony">MoU Singing Ceremony</Link></li>
                 <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/jobfair">Job Fair</Link></li>
-                <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">Seminar</a></li>
+                <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/seminar">Seminar</Link></li>
                 <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to='/annual-tour'>Annual Tour</Link></li>
                 <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">Falgun Events</a></li>
               </ul>

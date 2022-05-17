@@ -11,6 +11,9 @@ import FarewellProgramme from './Gallery/FearwellProgramme/FarewellProgramme';
 import JobFair from './Gallery/JobFair/JobFair';
 import MouSinging from './Gallery/MouSinging/MouSinging';
 import OfficeEnvironment from './Gallery/OfficeEnvironment/OfficeEnvironment';
+import OrientationProgramme from './Gallery/OrientationProgramme/OrientationProgramme';
+import Seminar from './Gallery/Seminar/Seminar';
+import TeachersTraining from './Gallery/TeachersTraining/TeachersTraining';
 
 function App() {
   return (
@@ -26,6 +29,9 @@ function App() {
         <Route path='/jobfair' element={<JobFair></JobFair>}></Route>
         <Route path='/mousingingceremony' element={<MouSinging></MouSinging>}></Route>
         <Route path='/officeenvironment' element={<OfficeEnvironment></OfficeEnvironment>}></Route>
+        <Route path='/orientation-programme' element={<OrientationProgramme></OrientationProgramme>}></Route>
+        <Route path='/seminar' element={<Seminar></Seminar>}></Route>
+        <Route path='/teachers-training' element={<TeachersTraining></TeachersTraining>}></Route>
       </Routes>
       <Footer></Footer>
     </div>

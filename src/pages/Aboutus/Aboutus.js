@@ -1,17 +1,13 @@
 import React from 'react'
-import aboutUs from '../../images/About-Us-Image.jpg'
 import './Aboutus.css'
-import mamunImage from '../../images/Mamun-Ur-Rashid.png'
-import sandeepImage from '../../images/SANDEEP_CHOWDHURY.png'
+import ceo from '../../images/images.jpg'
 import Facilities from '../../Facilities/Facilities'
 
 function Aboutus() {
   return (
     <div>
         <h1 className='about-us-title'>About Us</h1>
-        <div className='about-us-img'>
-            <img src={aboutUs} alt=''></img>
-        </div>
+        
         <div className='welcome-message'>
             <h3>WELCOME TO</h3>
             <h1>About European IT Institute</h1>
@@ -20,20 +16,20 @@ function Aboutus() {
         <div className='founder-section'>
             <div className='card'>
                 <div className='founder-img'>
-                    <img src={mamunImage} alt='mamun sir'></img>
+                    <img src={ceo} alt='ceo image'></img>
                 </div>
                 <div className='founder-info'>
-                    <p className='founder-name'>Md. Mamun Ur Rasid</p>
+                    <p className='founder-name'>John Doe</p>
                     <p className='role'>Co-Founder & MD</p>
                     <h3 className='institute'>European IT Solutions & Institute</h3>
                 </div>
             </div>
             <div className='card'>
                 <div className='founder-img'>
-                    <img src={sandeepImage} alt='sandeep sir'></img>
+                    <img src={ceo} alt='sandeep sir'></img>
                 </div>
                 <div className='founder-info'>
-                    <p className='founder-name'>Sandeep Chowdhury</p>
+                    <p className='founder-name'>Smith</p>
                     <p className='role'>Founder</p>
                     <h3 className='institute'>European IT Solutions & Institute</h3>
                 </div>
