@@ -12,12 +12,12 @@ function Footer() {
               </div>
               <div className="follow-us">
                   <h2>Follow Us</h2>
-                  <a href='#'><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                  <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-                  <a href='#'><i class="fa-brands fa-twitter"></i></a>
+                  <a href='#'><i className="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i className="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i className="fa-brands fa-youtube"></i></a>
+                  <a href="#"><i className="fa-brands fa-linkedin"></i></a>
+                  <a href="#"><i className="fa-brands fa-pinterest"></i></a>
+                  <a href='#'><i className="fa-brands fa-twitter"></i></a>
               </div>
               <div className="motivate-speech">
                   <img src={yourjourney} alt="" />
