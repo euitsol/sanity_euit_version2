@@ -29,12 +29,18 @@
     .facility-container{
         grid-template-columns: repeat(2, 1fr);
     }
+    .facilities{
+        padding: 50px 20px;
+    }
     
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:576px) {
     .facility-container{
         grid-template-columns: repeat(1, 1fr);
         text-align: center;
+    }
+    .facilities{
+        padding: 50px 10px;
     }
     
 }

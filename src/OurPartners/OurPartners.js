@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import './OurPartners.css'
 import usePartners from "../Hooks/usePartners";
+import partners from '../images/microsoft-logo.png'
 
 export default class OurPartner extends Component {
   render() {
@@ -46,28 +47,28 @@ export default class OurPartner extends Component {
         <h2> Our Partners </h2>
         <Slider {...settings}>
           <div>
-            <img src=""></img>
+            <img src={partners} alt='partner'></img>
           </div>
           <div>
-            <h3>2</h3>
+          <img src={partners} alt='partner'></img>
           </div>
           <div>
-            <h3>3</h3>
+          <img src={partners} alt='partner'></img>
           </div>
           <div>
-            <h3>4</h3>
+          <img src={partners} alt='partner'></img>
           </div>
           <div>
-            <h3>5</h3>
+          <img src={partners} alt='partner'></img>
           </div>
           <div>
-            <h3>6</h3>
+          <img src={partners} alt='partner'></img>
           </div>
           <div>
-            <h3>7</h3>
+          <img src={partners} alt='partner'></img>
           </div>
           <div>
-            <h3>8</h3>
+          <img src={partners} alt='partner'></img>
           </div>
         </Slider>
       </div>
