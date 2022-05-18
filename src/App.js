@@ -14,6 +14,7 @@ import OfficeEnvironment from './Gallery/OfficeEnvironment/OfficeEnvironment';
 import OrientationProgramme from './Gallery/OrientationProgramme/OrientationProgramme';
 import Seminar from './Gallery/Seminar/Seminar';
 import TeachersTraining from './Gallery/TeachersTraining/TeachersTraining';
+import OurPartner from './OurPartners/OurPartners';
 
 function App() {
   return (

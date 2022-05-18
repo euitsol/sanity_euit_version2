@@ -7,6 +7,7 @@ import Welcome from '../../../Welcome/Welcome'
 import ContactUs from '../../ContactUs/ContactUs'
 import Facilities from '../../../Facilities/Facilities'
 import Courses from '../Courses/Courses'
+import OurPartner from '../../../OurPartners/OurPartners'
 
 function Home() {
   return (
@@ -35,6 +36,7 @@ function Home() {
         <Welcome></Welcome>
         <Courses></Courses>
         <Facilities></Facilities>
+        <OurPartner></OurPartner>
         <ContactUs></ContactUs>
     </div>
   )
