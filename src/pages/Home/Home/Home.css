@@ -30,6 +30,21 @@
     border: 1px solid #e1e8ea;
     border-radius: 50%;
 }
+
+@media screen and (max-width:1100px) {
+    .services-container{
+        margin: 20px 10px;
+    }
+    
+}
+
+@media screen and (max-width:800px) {
+    .services-container{
+        display: none;
+    }
+    
+}
+
 @media all and (max-width:768px){
     .services-container{
         flex-direction: column;
