@@ -93,7 +93,6 @@ function Menu() {
                 <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/jobfair">Job Fair</Link></li>
                 <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/seminar">Seminar</Link></li>
                 <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to='/annual-tour'>Annual Tour</Link></li>
-                <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">Falgun Events</a></li>
               </ul>
             </li>
             <li><a href="/">News</a></li>
