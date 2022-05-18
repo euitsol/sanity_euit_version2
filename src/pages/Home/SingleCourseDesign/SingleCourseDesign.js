@@ -14,8 +14,8 @@ function SingleCourseDesign(props) {
             <h2 className='course-name'>{course_name }</h2>
         </div>
         <div className='totalclass-duration'>
-            <p>Total Class: {total_class}</p>
-            <p>Duration: {course_duration} hours</p>
+            <p className='total-class'>Total Class: {total_class}</p>
+            <p className='duration'>Duration: {course_duration} hours</p>
         </div>
     </div>
     
