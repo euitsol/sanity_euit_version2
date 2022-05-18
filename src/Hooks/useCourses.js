@@ -7,7 +7,17 @@ const useCourses = ()=>{
     useEffect(() => {
     const fetchData = async () => {
         try {
-        const course_prod = await sanityClient.fetch(`*[_type == "course_product"]`);
+        const course_prod = await sanityClient.fetch(`*[_type == "course_product"]{
+            course_name,
+            course_price,
+            course_duration,
+            total_class,
+            image{
+                asset->{
+                    url
+                }
+            }
+        }`);
         setCourses({ course_prod, loading: false });
         } catch (err) {
         setCourses({ loading: false, error: err.message });
