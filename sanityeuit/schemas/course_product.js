@@ -23,6 +23,11 @@ export default {
         title: 'Course Duration',
         type: 'number',
       },
+      {
+        name:'total_class',
+        title:'Total Class',
+        type:'number'
+      },
   
       {
         name: 'image',

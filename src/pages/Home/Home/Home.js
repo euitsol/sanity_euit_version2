@@ -3,6 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import './Home.css'
 import eidofferimg from '../../../images/website-banner-eid-offer----Copy.png'
+import Welcome from '../../../Welcome/Welcome'
+import ContactUs from '../../ContactUs/ContactUs'
+import Facilities from '../../../Facilities/Facilities'
+import Courses from '../Courses/Courses'
 
 function Home() {
   return (
@@ -27,7 +31,11 @@ function Home() {
               <FontAwesomeIcon className='icon' icon={faGraduationCap}></FontAwesomeIcon>
               <h3>Apply for New Courses</h3>
           </div>
-    </div>
+        </div>
+        <Welcome></Welcome>
+        <Courses></Courses>
+        <Facilities></Facilities>
+        <ContactUs></ContactUs>
     </div>
   )
 }

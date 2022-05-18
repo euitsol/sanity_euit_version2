@@ -12,13 +12,13 @@ function Menu() {
           <input type="radio" name="slider" id="menu-btn" />
           <input type="radio" name="slider" id="close-btn" />
           <ul className="nav-links">
-            <label for="close-btn" className="btn close-btn"><i className="fas fa-times"></i></label>
+            <label htmlFor="close-btn" className="btn close-btn"><i className="fas fa-times"></i></label>
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/about-us'>About Us</Link></li>
             <li>
               <a href="/" className="desktop-item">Courses <FontAwesomeIcon icon={faAngleDown} /></a>
               <input type="checkbox" id="showMega" />
-              <label for="showMega" className="mobile-item">Courses </label>
+              <label htmlFor="showMega" className="mobile-item">Courses </label>
               <div className="mega-box">
                 <div className="content">
                   <div className="row">
@@ -70,7 +70,7 @@ function Menu() {
             <li>
               <a href="/" className="desktop-item">Success Stories <FontAwesomeIcon icon={faAngleDown} /> </a>
               <input type="checkbox" id="showDrop" />
-              <label for="showDrop" className="mobile-item">Success Stories <FontAwesomeIcon icon={faAngleDown} /></label>
+              <label htmlFor="showDrop" className="mobile-item">Success Stories <FontAwesomeIcon icon={faAngleDown} /></label>
               <ul className="drop-menu">
                 <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">Student's Success</a></li>
                 <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">Professionals Expert Opinion</a></li>
@@ -83,7 +83,7 @@ function Menu() {
             <li>
               <a href="/" className="desktop-item">Gallery<FontAwesomeIcon icon={faAngleDown} /></a>
               <input type="checkbox" id="showDrop" />
-              <label for="showDrop" className="mobile-item">Gallery <FontAwesomeIcon icon={faAngleDown} /></label>
+              <label htmlFor="showDrop" className="mobile-item">Gallery <FontAwesomeIcon icon={faAngleDown} /></label>
               <ul className="drop-menu">
                 <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/officeenvironment">Office Environment</Link></li>
                 <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/orientation-programme">Orientation Programme</Link></li>
@@ -98,7 +98,7 @@ function Menu() {
             <li><a href="/">News</a></li>
             <li><a href="/">Contact us</a></li>
           </ul>
-          <label for="menu-btn" className="btn menu-btn"><i className="fas fa-bars"></i></label>
+          <label htmlFor="menu-btn" className="btn menu-btn"><i className="fas fa-bars"></i></label>
         </div>
       <button className='admission-now-btn'>Admission now</button>
       </div>
