@@ -35,3 +35,13 @@
 .banner img{
     width: 100%;
 }
+@media screen and (max-width:1100px){
+    .phone-number, .mail-section{
+        display: none;
+    }
+}
+@media screen and (max-width:970px){
+    .basis-logo{
+        display: none;
+    }
+}

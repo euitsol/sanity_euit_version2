@@ -21,7 +21,6 @@ function Courses() {
                 courses.course_prod.map(course => <SingleCourseDesign key={course._id} course={course}></SingleCourseDesign>)
               }
           </div>
-          <button className='all-courses-btn'>See All Courses</button>
 
     </div>
   )
