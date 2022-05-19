@@ -79,7 +79,7 @@ function Menu() {
               </ul>
             </li>
 
-            <li><a href="/">Events</a></li>
+            <li><Link to="/events">Events</Link></li>
             <li>
               <a href="/" className="desktop-item">Gallery<FontAwesomeIcon icon={faAngleDown} /></a>
               <input type="checkbox" id="showDrop" />

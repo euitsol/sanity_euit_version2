@@ -1,0 +1,32 @@
+.events-title{
+    text-align: start;
+    color: #3C6382;
+    background-color: #F8F8F8;
+    padding: 40px 0;
+    padding-left: 300px;
+    text-transform: uppercase;
+    
+}
+.events-section{
+    margin: 50px 0;
+}
+
+.events-section p{
+    color: #3C6382;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.events-section .events-view-all-btn{
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #00AEEF;
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 8px;
+    margin: 20px 0;
+}

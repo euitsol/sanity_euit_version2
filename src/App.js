@@ -16,6 +16,7 @@ import Seminar from './Gallery/Seminar/Seminar';
 import TeachersTraining from './Gallery/TeachersTraining/TeachersTraining';
 import OurPartner from './OurPartners/OurPartners';
 import ContactPage from './pages/ContactPage/ContactPage';
+import Events from './Events/Events';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path='/seminar' element={<Seminar></Seminar>}></Route>
         <Route path='/teachers-training' element={<TeachersTraining></TeachersTraining>}></Route>
         <Route path='/contact-us' element={<ContactPage></ContactPage>}></Route>
+        <Route path='/events' element={<Events></Events>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
