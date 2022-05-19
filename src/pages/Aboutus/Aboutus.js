@@ -3,6 +3,7 @@ import './Aboutus.css'
 import ceo from '../../images/images.jpg'
 import Facilities from '../../Facilities/Facilities'
 import Welcome from '../../Welcome/Welcome'
+import ContactUs from '../ContactUs/ContactUs'
 
 function Aboutus() {
   return (
@@ -12,7 +13,7 @@ function Aboutus() {
         <div className='founder-section'>
             <div className='card'>
                 <div className='founder-img'>
-                    <img src={ceo} alt='ceo image'></img>
+                    <img src={ceo} alt='ceo'></img>
                 </div>
                 <div className='founder-info'>
                     <p className='founder-name'>John Doe</p>
@@ -32,6 +33,7 @@ function Aboutus() {
             </div>
         </div>
         <Facilities></Facilities>
+        <ContactUs></ContactUs>
     </div>
   )
 }

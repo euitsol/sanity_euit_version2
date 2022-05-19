@@ -47,14 +47,23 @@
 @media all and (max-width: 768px){
     .job-placement{
         flex-direction: column;
+        justify-content: center;
         padding: 10px;
+    }
+    .job-placement .details p{
+        width: 100%;
+    }
+    .job-placement iframe{
+        width: 100%;
     }
     .job-placement .details p{
         width: 100%;
         padding: 0;
     }
-    .job-placement-video{
-        width: 120%;
-        height: auto;
+}
+@media screen and (max-width:576px) {
+    .job-placement iframe{
+        width: 100%;
     }
+    
 }

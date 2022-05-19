@@ -14,9 +14,11 @@ import CareerCouncelling from '../../../CareerCouncelling/CareerCouncelling'
 function Home() {
   return (
     <div>
+      {/* banner section */}
         <div className='banner'>
             <img src={eidofferimg} alt='eid banner'></img>
         </div>
+        {/* banner bottom section */}
         <div className='services-container'>
           <div className='card'>
               <FontAwesomeIcon className='icon' icon={faStamp} />
