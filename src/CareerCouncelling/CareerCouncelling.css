@@ -1,0 +1,74 @@
+.career-councelling{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: 100px auto;
+    align-items: center;
+}
+.career-councelling p{
+    color: #3C6382;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.career-councelling img{
+    width: 100%;
+}
+.career-councelling h1{
+    color: #3C6382;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.career-councelling form{
+    width: 80%;
+    margin: 0 auto;
+}
+.person-info{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.person-info input, .person-info select{
+    padding: 8px 20px;
+    outline: none;
+    width: 100%;
+    border: 1px solid rgba(100, 100, 100, 0.171);
+    border-radius: 6px;
+}
+
+.person-info input:focus{
+    border: 1px solid #3C6382;
+}
+
+.user-message{
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 5px;
+    padding-bottom: 100px;
+    overflow: auto;
+    border: 1px solid rgba(100, 100, 100, 0.171);
+}
+.submit{
+    background-color: #00AEEF;
+    padding: 8px 16px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+}
+
+@media all and (max-width:768px){
+    .career-councelling{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .user-message{
+        width: 100%;
+    }
+}

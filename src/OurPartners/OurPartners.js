@@ -43,7 +43,7 @@ export default class OurPartner extends Component {
       ]
     };
     return (
-      <div>
+      <div className="our-partners">
         <h2> Our Partners </h2>
         <Slider {...settings}>
           <div>

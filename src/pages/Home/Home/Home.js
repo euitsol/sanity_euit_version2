@@ -8,6 +8,8 @@ import ContactUs from '../../ContactUs/ContactUs'
 import Facilities from '../../../Facilities/Facilities'
 import Courses from '../Courses/Courses'
 import OurPartner from '../../../OurPartners/OurPartners'
+import JobPLacement from '../../../JobPlacement/JobPLacement'
+import CareerCouncelling from '../../../CareerCouncelling/CareerCouncelling'
 
 function Home() {
   return (
@@ -36,6 +38,8 @@ function Home() {
         <Welcome></Welcome>
         <Courses></Courses>
         <Facilities></Facilities>
+        <JobPLacement></JobPLacement>
+        <CareerCouncelling></CareerCouncelling>
         <OurPartner></OurPartner>
         <ContactUs></ContactUs>
     </div>

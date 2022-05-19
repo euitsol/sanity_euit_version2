@@ -3,3 +3,19 @@ h2{
     font-size: 30px;
     font-weight: 700;
 }
+.our-partners{
+    width: 65%;
+    margin: 40px auto;
+}
+
+@media all and (max-width:768px){
+    .our-partners{
+        width: 80%;
+    }
+}
+
+@media all and (max-width:576px) {
+    .our-partners {
+        width: 90%;
+    }
+}
