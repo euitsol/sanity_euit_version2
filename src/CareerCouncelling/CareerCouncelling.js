@@ -7,7 +7,6 @@ function CareerCouncelling() {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => console.log(data);
     const courses = ['Web Design', 'Web Design and Development', 'Graphyic Design', 'Wordpress Theme Customization', 'OOP PHP & MySql', 'CodeIgniter Framework', 'Laravel Framework', 'App Development', '3D Animation', 'UI/UX Design', 'Photography', 'Motion Graphic', 'Video Editing', 'Networking', 'MTCNA', 'Motion Graphic', 'Video Editing', 'Networking', 'MTCNA', 'CCNA', 'RHCSA/RHCHE', 'Digital Markrting', 'SEO', 'Social Marketing', 'Communicative English', 'Microsoft Office']
-    console.log(errors);
   return (
     <div>
         <div className='career-councelling'>

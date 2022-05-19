@@ -15,6 +15,7 @@ import OrientationProgramme from './Gallery/OrientationProgramme/OrientationProg
 import Seminar from './Gallery/Seminar/Seminar';
 import TeachersTraining from './Gallery/TeachersTraining/TeachersTraining';
 import OurPartner from './OurPartners/OurPartners';
+import ContactPage from './pages/ContactPage/ContactPage';
 
 function App() {
   return (
@@ -24,7 +25,6 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/about-us' element={<Aboutus></Aboutus>}></Route>
-        <Route path='/contact-us' element={<ContactUs></ContactUs>}></Route>
         <Route path='/annual-tour' element={<AnnualTour></AnnualTour>}></Route>
         <Route path='/farewell' element={<FarewellProgramme></FarewellProgramme>}></Route>
         <Route path='/jobfair' element={<JobFair></JobFair>}></Route>
@@ -33,6 +33,7 @@ function App() {
         <Route path='/orientation-programme' element={<OrientationProgramme></OrientationProgramme>}></Route>
         <Route path='/seminar' element={<Seminar></Seminar>}></Route>
         <Route path='/teachers-training' element={<TeachersTraining></TeachersTraining>}></Route>
+        <Route path='/contact-us' element={<ContactPage></ContactPage>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
