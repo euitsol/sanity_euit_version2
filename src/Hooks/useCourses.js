@@ -12,6 +12,9 @@ const useCourses = ()=>{
             course_price,
             course_duration,
             total_class,
+            slug{
+                current
+            },
             image{
                 asset->{
                     url
