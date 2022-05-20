@@ -1,0 +1,68 @@
+.course-details-title{
+    text-align: start;
+    color: #3C6382;
+    background-color: #F8F8F8;
+    padding: 40px 0;
+    padding-left: 300px;
+    text-transform: uppercase;
+}
+
+/* course-details */
+.course-details-container{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 80%;
+    margin: 50px auto;
+}
+.course-details{
+    width: 80%;
+    margin: 0 auto;
+    text-align: start;
+}
+.course-details h1{
+    font-size: 25px;
+    line-height: 31px;
+    color: #3C6382;
+    font-weight: 600;
+    margin: 30px 0 15px 0;
+}
+.course-details p{
+    color: #7a7a7a;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 34px;
+}
+.details{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.arrow-icon{
+    color: #00AEEF;
+    margin-right: 8px;
+}
+.cart-details{
+    text-align: start;
+}
+.add-to-cart{
+    width: 80%;
+    margin: 0 auto;
+}
+.add-to-cart img{
+    width: 100%;
+}
+.course-price{
+    color: #00AEEF;
+    font-weight: 700;
+}
+.add-to-cart-btn{
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 12px 0;
+    margin: 20px 0;
+    background-color: #00AEEF;
+}

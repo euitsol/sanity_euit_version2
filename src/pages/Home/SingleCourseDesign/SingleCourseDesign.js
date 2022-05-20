@@ -5,7 +5,6 @@ import './SingleCourseDesign.css'
 function SingleCourseDesign(props) {
     const {course_name, course_price, course_duration, total_class, image, slug } = props.course;
     const courseImage = image.asset.url;
-    console.log(slug.current)
 
   return (
     <Link to={`/course/${slug.current}`}>

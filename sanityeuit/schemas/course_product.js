@@ -49,6 +49,30 @@ export default {
         of: [{type: 'string'}]
       },
       {
+        title: 'Highlight',
+        name: 'highlight',
+        type: 'array',
+        of: [{type: 'string'}]
+      },
+      {
+        title: 'Topics',
+        name: 'topics',
+        type: 'array',
+        of: [{type: 'string'}]
+      },
+      {
+        title: 'Spftware Taught',
+        name: 'software_taught',
+        type: 'array',
+        of: [{type: 'string'}]
+      },
+      {
+        title: 'Career Support',
+        name: 'career_support',
+        type: 'array',
+        of: [{type: 'string'}]
+      },
+      {
         name: 'slug',
         title: 'Slug',
         type: 'slug',
