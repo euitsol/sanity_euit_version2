@@ -42,7 +42,12 @@ export default {
         title: 'Description',
         type: 'string',
       },
-  
+      {
+        title: 'Course Module',
+        name: 'course_module',
+        type: 'array',
+        of: [{type: 'string'}]
+      },
       {
         name: 'slug',
         title: 'Slug',
@@ -52,12 +57,6 @@ export default {
           maxLength: 96,
         },
       },
-  
-      // {
-      //   name: 'module',
-      //   title: 'Module',
-      //   type: 'string',
-      // },
     ],
   };
   
