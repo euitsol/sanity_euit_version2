@@ -19,6 +19,11 @@ export default {
         type: 'number',
       },
       {
+        name: 'overview',
+        title: 'Course Overview',
+        type: 'string',
+      },
+      {
         name: 'course_duration',
         title: 'Course Duration',
         type: 'number',

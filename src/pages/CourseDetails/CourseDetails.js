@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import useCourseDetails from '../../Hooks/useCourseDetails'
+import ContactUs from '../ContactUs/ContactUs'
 import './CourseDetails.css'
 
 function CourseDetails() {
@@ -19,12 +20,12 @@ function CourseDetails() {
 
   return (
     <div>
-      <h1 className='course-details-title'>{slug}</h1>  
+      <h1 className='course-details-title'>{courseDetails?.course_prod[0]?.course_name}</h1>  
       <div className='course-details-container'>
         <div className='course-details'>
           <div className='overview'>
             <h1>overview</h1>
-            <p>Web Design – In the modern world, a Website has become one of the most popular and cost-efficient means of marketing. Many organizations advertise their products through the World Wide Web. Designing a good website is a complex process; that involves conceptualization, planning, graphic designing, content development, interactivity programming and proper guided execution by experienced professionals. Designing is the most important part of web development. Design helps to connect the customer directly. Build yourself as a successful web designer by taking a professional web design course from European IT, one of the leading and international quality computer training institutes in Bangladesh.</p>
+            <p>{options[0]?.overview}</p>
           </div>
           <div className='details'>
           <div className='left'>
@@ -88,14 +89,14 @@ function CourseDetails() {
             <img src='https://europeanit-inst.com/wp-content/uploads/2022/03/web-design.png' alt='european it'></img>
             <div className='cart-details'>
               <h3 className='course-price'>$9000</h3>
-              <button className='add-to-cart-btn'>Add to cart</button>
-              <p><FontAwesomeIcon icon={faChartColumn}></FontAwesomeIcon>Skill Level: Beginner</p>
-              <p><FontAwesomeIcon icon={faClock}></FontAwesomeIcon>Duration: 02 hours</p>
-              <p><FontAwesomeIcon icon={faCalendarWeek}></FontAwesomeIcon>Class Per Week: 2 Days</p>
-              <p><FontAwesomeIcon icon={faBookmark}></FontAwesomeIcon>Total Class: 32</p>
-              <p><FontAwesomeIcon icon={faGlobe}></FontAwesomeIcon>Language: Bangla & English</p>
-              <p><FontAwesomeIcon icon={faAward}></FontAwesomeIcon>Certificate: Yes</p>
-              <p><FontAwesomeIcon icon={faFilm}></FontAwesomeIcon>Provide Class Video</p>
+              <button className='add-to-cart-btn'>Add to Cart</button>
+              <p className='add-to-cart-info'><FontAwesomeIcon className='icon' icon={faChartColumn}></FontAwesomeIcon>Skill Level: Beginner</p>
+              <p className='add-to-cart-info'><FontAwesomeIcon className='icon' icon={faClock}></FontAwesomeIcon>Duration: 02 hours</p>
+              <p className='add-to-cart-info'><FontAwesomeIcon className='icon' icon={faCalendarWeek}></FontAwesomeIcon>Class Per Week: 2 Days</p>
+              <p className='add-to-cart-info'><FontAwesomeIcon className='icon' icon={faBookmark}></FontAwesomeIcon>Total Class: 32</p>
+              <p className='add-to-cart-info'><FontAwesomeIcon className='icon' icon={faGlobe}></FontAwesomeIcon>Language: Bangla & English</p>
+              <p className='add-to-cart-info'><FontAwesomeIcon className='icon' icon={faAward}></FontAwesomeIcon>Certificate: Yes</p>
+              <p className='add-to-cart-info'><FontAwesomeIcon className='icon' icon={faFilm}></FontAwesomeIcon>Provide Class Video</p>
             </div>
           </div>
 
@@ -106,6 +107,7 @@ function CourseDetails() {
           </div>
         </div>
       </div>
+      <ContactUs></ContactUs>
     </div>
   )
 }

@@ -23,6 +23,7 @@ const useCourseDetails = (slug) =>{
             course_module,
             highlight,
             topics,
+            overview,
             software_taught,
             career_support
         }`);
