@@ -5,7 +5,6 @@ function SingleCourseDesign(props) {
     console.log(props.course.image.asset.url)
     const {_id, course_name, course_price, course_duration, total_class } = props.course;
     const image = props.course.image.asset.url;
-    console.log(image)
   return (
     <div className='card'>
         <img src={image} alt="" />
