@@ -98,9 +98,16 @@ nav .wrapper {
 .drop-menu li a {
     width: 100%;
     display: block;
-    padding: 0 0 0 15px;
+    line-height: 30px;
     font-weight: 400;
     border-radius: 0px;
+    border-bottom: 2px solid rgba(105, 105, 105, 0.322);
+    padding-left: 0;
+    font-size: 16px;
+}
+.gallery-items:last-child,
+.succes-stories-item:last-child {
+    border-bottom: none;
 }
 
 .mega-box {

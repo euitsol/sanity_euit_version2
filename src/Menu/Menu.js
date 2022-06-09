@@ -72,10 +72,10 @@ function Menu() {
               <input type="checkbox" id="showDrop" />
               <label htmlFor="showDrop" className="mobile-item">Success Stories <FontAwesomeIcon icon={faAngleDown} /></label>
               <ul className="drop-menu">
-                <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Student's Success</Link></li>
-                <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Professionals Expert Opinion</Link></li>
-                <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Written Feedback</Link></li>
-                <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Video Feedback</Link></li>
+                <li className='succes-stories-item'><Link to="/">Student's Success</Link></li>
+                <li className='succes-stories-item'><Link to="/">Professionals Expert Opinion</Link></li>
+                <li className='succes-stories-item'><Link to="/">Written Feedback</Link></li>
+                <li className='succes-stories-item'><Link to="/">Video Feedback</Link></li>
               </ul>
             </li>
 
@@ -85,14 +85,14 @@ function Menu() {
               <input type="checkbox" id="gallery" />
               <label htmlFor="gallery" className="mobile-item">Gallery <FontAwesomeIcon icon={faAngleDown} /></label>
               <ul className="drop-menu">
-                <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/officeenvironment">Office Environment</Link></li>
-                <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/orientation-programme">Orientation Programme</Link></li>
-                <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/teachers-training">Teachers Training</Link></li>
-                <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/farewell">Fearwell Programme</Link></li>
-                <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/mousingingceremony">MoU Singing Ceremony</Link></li>
-                <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/jobfair">Job Fair</Link></li>
-                <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/seminar">Seminar</Link></li>
-                <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to='/annual-tour'>Annual Tour</Link></li>
+                <li className='gallery-items'><Link to="/officeenvironment">Office Environment</Link></li>
+                <li className='gallery-items'><Link to="/orientation-programme">Orientation Programme</Link></li>
+                <li className='gallery-items'><Link to="/teachers-training">Teachers Training</Link></li>
+                <li className='gallery-items'><Link to="/farewell">Fearwell Programme</Link></li>
+                <li className='gallery-items'><Link to="/mousingingceremony">MoU Singing Ceremony</Link></li>
+                <li className='gallery-items'><Link to="/jobfair">Job Fair</Link></li>
+                <li className='gallery-items'><Link to="/seminar">Seminar</Link></li>
+                <li className='gallery-items'><Link to='/annual-tour'>Annual Tour</Link></li>
               </ul>
             </li>
             <li><a href="/">News</a></li>

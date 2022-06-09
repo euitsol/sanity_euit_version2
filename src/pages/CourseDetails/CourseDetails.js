@@ -9,7 +9,7 @@ import './CourseDetails.css'
 
 function CourseDetails() {
     const {slug} = useParams()
-    const [courseDetails, loading, error, course_prod] = useCourseDetails(slug)
+    const [courseDetails, loading, error, course_prod] = useCourseDetails(slug);
     const options = courseDetails?.course_prod;
     const courseModule = options[0]?.course_module;
     const topics = options[0]?.topics;
