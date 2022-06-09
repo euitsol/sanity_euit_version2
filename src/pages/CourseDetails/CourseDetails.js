@@ -4,6 +4,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import useCourseDetails from '../../Hooks/useCourseDetails'
 import ContactUs from '../ContactUs/ContactUs'
+import Loading from '../Loading/Loading'
 import './CourseDetails.css'
 
 function CourseDetails() {
@@ -16,6 +17,11 @@ function CourseDetails() {
     const softwareTaught = options[0]?.software_taught;
     const highlight = options[0]?.highlight;
     const careerSupport = options[0]?.career_support;
+    const courseImage = options[0]?.image?.asset?.url;
+
+    if(loading){
+      return(<Loading></Loading>)
+    }
 
 
   return (
@@ -86,7 +92,7 @@ function CourseDetails() {
           {/* add to cart section */}
 
           <div className='add-to-cart'>
-            <img src='https://europeanit-inst.com/wp-content/uploads/2022/03/web-design.png' alt='european it'></img>
+            <img src={courseImage?courseImage:''} alt='european it'></img>
             <div className='cart-details'>
               <h3 className='course-price'>$9000</h3>
               <button className='add-to-cart-btn'>Add to Cart</button>

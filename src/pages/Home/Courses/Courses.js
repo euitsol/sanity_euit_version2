@@ -17,7 +17,7 @@ function Courses() {
           </div>
           <div className="cards">
               {
-                courses.course_prod.map(course => <SingleCourseDesign key={course._id} course={course}></SingleCourseDesign>)
+                courses.course_prod.map((course, i) => <SingleCourseDesign key={i} course={course}></SingleCourseDesign>)
               }
           </div>
 

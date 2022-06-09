@@ -21,7 +21,7 @@ function ContactPage() {
                         <input type="tel" placeholder="Mobile number" {...register("Mobile number", {required: true, minLength: 6, maxLength: 11})} />
                         <select {...register("Title", { required: true })}>
                             {
-                                courses.map(course=><option value={course}>{course}</option>)
+                                courses.map((course, index)=><option key={index} value={course}>{course}</option>)
                             }
                         </select>
                     </div>
