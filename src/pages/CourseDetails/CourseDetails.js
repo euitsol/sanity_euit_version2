@@ -1,6 +1,6 @@
 import { faAngleRight, faAward, faBookmark, faCalendarWeek, faChartColumn, faClock, faFilm, faGlobe } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import useCourseDetails from '../../Hooks/useCourseDetails'
 import ContactUs from '../ContactUs/ContactUs'
@@ -11,13 +11,16 @@ function CourseDetails() {
     const {slug} = useParams()
     const [courseDetails, loading, error, course_prod] = useCourseDetails(slug)
     const options = courseDetails?.course_prod;
-
     const courseModule = options[0]?.course_module;
     const topics = options[0]?.topics;
     const softwareTaught = options[0]?.software_taught;
     const highlight = options[0]?.highlight;
     const careerSupport = options[0]?.career_support;
     const courseImage = options[0]?.image?.asset?.url;
+
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [])
 
     if(loading){
       return(<Loading></Loading>)

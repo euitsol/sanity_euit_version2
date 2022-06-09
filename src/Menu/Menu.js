@@ -16,7 +16,7 @@ function Menu() {
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/about-us'>About Us</Link></li>
             <li>
-              <a href="/" className="desktop-item">Courses <FontAwesomeIcon icon={faAngleDown} /></a>
+              <a href="/" className="desktop-item">Courses <FontAwesomeIcon className='arrow-right' icon={faAngleDown} /></a>
               <input type="checkbox" id="showMega" />
               <label htmlFor="showMega" className="mobile-item">Courses </label>
               <div className="mega-box">
@@ -24,66 +24,66 @@ function Menu() {
                   <div className="row">
                     <header>DEVELOPMENT</header>
                     <ul className="mega-links">
-                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">Web Design</a></li>
-                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">Web Design and Development</a></li>
-                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">Wordpress Theme Customization</a></li>
-                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">OOP PHP & MySql</a></li>
-                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">Codeigniter Framework</a></li>
-                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">Laravel Framework</a></li>
-                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">App Development</a></li>
-                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">Python Development</a></li>
+                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Web Design</Link></li>
+                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/course/web-design-and-development">Web Design and Development</Link></li>
+                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Wordpress Theme Customization</Link></li>
+                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">OOP PHP & MySql</Link></li>
+                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Codeigniter Framework</Link></li>
+                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Laravel Framework</Link></li>
+                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">App Development</Link></li>
+                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Python Development</Link></li>
                     </ul>
                   </div>
                   <div className="row">
                     <header>DESIGN</header>
                     <ul className="mega-links">
-                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">Graphic Design</a></li>
-                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">3D Animation</a></li>
-                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">UI/UX Design</a></li>
-                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">Photography</a></li>
-                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">Motion Graphics</a></li>
-                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">Video Editing</a></li>
+                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Graphic Design</Link></li>
+                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">3D Animation</Link></li>
+                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">UI/UX Design</Link></li>
+                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Photography</Link></li>
+                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Motion Graphics</Link></li>
+                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Video Editing</Link></li>
                     </ul>
                   </div>
                   <div className="row">
                     <header>Networking</header>
                     <ul className="mega-links">
-                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">Networking</a></li>
-                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">MTCNA</a></li>
-                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">CCNA</a></li>
-                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">RHCSA/RHCE</a></li>
-                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">AWS Solution Architecture Associate (SAA-CO2)</a></li>
+                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Networking</Link></li>
+                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">MTCNA</Link></li>
+                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">CCNA</Link></li>
+                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">RHCSA/RHCE</Link></li>
+                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">AWS Solution Architecture Associate (SAA-CO2)</Link></li>
                     </ul>
                   </div>
                   <div className="row">
                     <header>MARKETING & OTHERS</header>
                     <ul className="mega-links">
-                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">Digital Marketing</a></li>
-                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">SEO</a></li>
-                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">Communicative English</a></li>
-                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">Basic Computer</a></li>
+                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Digital Marketing</Link></li>
+                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">SEO</Link></li>
+                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Communicative English</Link></li>
+                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Basic Computer</Link></li>
                     </ul>
                   </div>
                 </div>
               </div>
             </li>
             <li>
-              <a href="/" className="desktop-item">Success Stories <FontAwesomeIcon icon={faAngleDown} /> </a>
+              <a href="/" className="desktop-item">Success Stories <FontAwesomeIcon className='arrow-right' icon={faAngleDown} /> </a>
               <input type="checkbox" id="showDrop" />
               <label htmlFor="showDrop" className="mobile-item">Success Stories <FontAwesomeIcon icon={faAngleDown} /></label>
               <ul className="drop-menu">
-                <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">Student's Success</a></li>
-                <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">Professionals Expert Opinion</a></li>
-                <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">Written Feedback</a></li>
-                <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><a href="/">Video Feedback</a></li>
+                <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Student's Success</Link></li>
+                <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Professionals Expert Opinion</Link></li>
+                <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Written Feedback</Link></li>
+                <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Video Feedback</Link></li>
               </ul>
             </li>
 
             <li><Link to="/events">Events</Link></li>
             <li>
-              <a href="/" className="desktop-item">Gallery<FontAwesomeIcon icon={faAngleDown} /></a>
-              <input type="checkbox" id="showDrop" />
-              <label htmlFor="showDrop" className="mobile-item">Gallery <FontAwesomeIcon icon={faAngleDown} /></label>
+              <a href="/" className="desktop-item">Gallery<FontAwesomeIcon className='arrow-right' icon={faAngleDown} /></a>
+              <input type="checkbox" id="gallery" />
+              <label htmlFor="gallery" className="mobile-item">Gallery <FontAwesomeIcon icon={faAngleDown} /></label>
               <ul className="drop-menu">
                 <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/officeenvironment">Office Environment</Link></li>
                 <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/orientation-programme">Orientation Programme</Link></li>
