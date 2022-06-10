@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { useParams } from "react-router-dom";
 import sanityClient from '../client'
 
 const useCourseDetails = (slug) =>{
@@ -33,7 +34,7 @@ const useCourseDetails = (slug) =>{
         }
     };
     fetchData();
-    }, []);
+    }, [slug]);
     
     return [courseDetails, loading, error, course_prod]
 }

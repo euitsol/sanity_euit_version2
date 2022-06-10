@@ -19,7 +19,7 @@ function CourseDetails() {
     const courseImage = options[0]?.image?.asset?.url;
 
     useEffect(() => {
-      window.scrollTo(0, 0)
+      window.scrollTo(0, 0);
     }, [])
 
     if(loading){
@@ -44,7 +44,7 @@ function CourseDetails() {
             <div className='detail'>
               <h1>Modules</h1>
               {
-                courseModule?.map(module=><p key={module}><FontAwesomeIcon className='arrow-icon' icon={faAngleRight}></FontAwesomeIcon>{module}</p>)
+                courseModule?.map((module, i)=><p key={i}><FontAwesomeIcon className='arrow-icon' icon={faAngleRight}></FontAwesomeIcon>{module}</p>)
               }
              
             </div>
@@ -54,7 +54,7 @@ function CourseDetails() {
             <div className='detail'>
               <h1>Highlight</h1>
               {
-                highlight?.map(highligt=><p key={highlight}><FontAwesomeIcon className='arrow-icon' icon={faAngleRight}></FontAwesomeIcon>{highligt}</p>)
+                highlight?.map((highligt, i)=><p key={i}><FontAwesomeIcon className='arrow-icon' icon={faAngleRight}></FontAwesomeIcon>{highligt}</p>)
               }
               
             </div>
@@ -66,7 +66,7 @@ function CourseDetails() {
             <div className='detail'>
               <h1>Topics</h1>
               {
-                topics?.map(topic=><p key={topic}><FontAwesomeIcon className='arrow-icon' icon={faAngleRight}></FontAwesomeIcon>{topic}</p>)
+                topics?.map((topic, i)=><p key={i}><FontAwesomeIcon className='arrow-icon' icon={faAngleRight}></FontAwesomeIcon>{topic}</p>)
               }
             </div>
 
@@ -75,7 +75,7 @@ function CourseDetails() {
             <div className='detail'>
               <h1>Software Taught</h1>
               {
-                softwareTaught?.map(softwareTaugt=><p key={softwareTaugt}><FontAwesomeIcon className='arrow-icon' icon={faAngleRight}></FontAwesomeIcon>{softwareTaugt}</p>)
+                softwareTaught?.map((softwareTaugt, i)=><p key={i}><FontAwesomeIcon className='arrow-icon' icon={faAngleRight}></FontAwesomeIcon>{softwareTaugt}</p>)
               }
             </div>
 
@@ -84,7 +84,7 @@ function CourseDetails() {
             <div className='detail'>
               <h1>Career Support</h1>
               {
-                careerSupport?.map(careersprt=><p key={careersprt}><FontAwesomeIcon className='arrow-icon' icon={faAngleRight}></FontAwesomeIcon>{careersprt}</p>)
+                careerSupport?.map((careersprt, i)=><p key={i}><FontAwesomeIcon className='arrow-icon' icon={faAngleRight}></FontAwesomeIcon>{careersprt}</p>)
               }
             </div>
             </div>

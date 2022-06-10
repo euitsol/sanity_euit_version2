@@ -31,7 +31,7 @@ function Menu() {
                       <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Codeigniter Framework</Link></li>
                       <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Laravel Framework</Link></li>
                       <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">App Development</Link></li>
-                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Python Development</Link></li>
+                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/course/python-development">Python Development</Link></li>
                     </ul>
                   </div>
                   <div className="row">

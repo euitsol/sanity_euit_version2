@@ -4,7 +4,6 @@ import Aboutus from './pages/Aboutus/Aboutus';
 import Header from './Header/Header';
 import Home from './pages/Home/Home/Home';
 import Footer from './Footer/Footer';
-import ContactUs from './pages/ContactUs/ContactUs';
 import Menu from './Menu/Menu';
 import AnnualTour from './Gallery/AnnualTour/AnnualTour';
 import FarewellProgramme from './Gallery/FearwellProgramme/FarewellProgramme';
@@ -14,10 +13,10 @@ import OfficeEnvironment from './Gallery/OfficeEnvironment/OfficeEnvironment';
 import OrientationProgramme from './Gallery/OrientationProgramme/OrientationProgramme';
 import Seminar from './Gallery/Seminar/Seminar';
 import TeachersTraining from './Gallery/TeachersTraining/TeachersTraining';
-import OurPartner from './OurPartners/OurPartners';
 import ContactPage from './pages/ContactPage/ContactPage';
 import Events from './Events/Events';
 import CourseDetails from './pages/CourseDetails/CourseDetails';
+
 
 function App() {
   return (
