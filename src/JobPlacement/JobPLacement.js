@@ -5,7 +5,7 @@ import './JobPlacement.css'
 function JobPLacement() {
   return (
     <div className='job-placement'>
-          <div className="details">
+          <div className="job-placement-details">
               <p className='job'>Job</p>
               <h2 className='placement'>Placement</h2>
               <img src={image} alt="" />
