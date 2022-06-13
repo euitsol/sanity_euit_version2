@@ -100,7 +100,7 @@ function Menu() {
           </ul>
           <label htmlFor="menu-btn" className="btn menu-btn"><i className="fas fa-bars"></i></label>
         </div>
-      <button className='admission-now-btn'>Admission now</button>
+      <button className='admission-now-btn'><Link to='/admission-now' className='admission-now-btn-link'>Admission Now</Link></button>
       </div>
         </nav>
   )

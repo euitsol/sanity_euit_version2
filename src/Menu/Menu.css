@@ -197,6 +197,11 @@ nav .wrapper {
     border: none;
     cursor: pointer;
 }
+.admission-now-btn-link{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
 .menu-btn{
     color: black;
 }
