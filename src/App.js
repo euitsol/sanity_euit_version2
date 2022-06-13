@@ -16,6 +16,7 @@ import TeachersTraining from './Gallery/TeachersTraining/TeachersTraining';
 import ContactPage from './pages/ContactPage/ContactPage';
 import Events from './Events/Events';
 import CourseDetails from './pages/CourseDetails/CourseDetails';
+import NotFound from './pages/NotFound/NotFound';
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
         <Route path='/contact-us' element={<ContactPage></ContactPage>}></Route>
         <Route path='/events' element={<Events></Events>}></Route>
         <Route path='/course/:slug' element={<CourseDetails></CourseDetails>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>

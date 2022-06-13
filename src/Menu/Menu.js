@@ -24,9 +24,9 @@ function Menu() {
                   <div className="row">
                     <header>DEVELOPMENT</header>
                     <ul className="mega-links">
-                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Web Design</Link></li>
+                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/course/web-design">Web Design</Link></li>
                       <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/course/web-design-and-development">Web Design and Development</Link></li>
-                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Wordpress Theme Customization</Link></li>
+                      <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/course/wordpress-theme-customization">Wordpress Theme Customization</Link></li>
                       <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">OOP PHP & MySql</Link></li>
                       <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Codeigniter Framework</Link></li>
                       <li><FontAwesomeIcon className='right-arrow-icon' icon={faAngleRight}></FontAwesomeIcon><Link to="/">Laravel Framework</Link></li>
