@@ -28,9 +28,7 @@ function Header() {
                       <p>here your email</p>
                   </div>
               </div>
-              <div className="basis-logo">
-                  <img src="https://europeanit-inst.com/wp-content/uploads/2020/02/basis-logo.svg" alt="basis" title='European It partner- Basis' />
-              </div>
+             
           </div>
       </div>
   )

@@ -18,6 +18,9 @@ function CourseDetails() {
     const careerSupport = options[0]?.career_support;
     const courseImage = options[0]?.image?.asset?.url;
 
+    const workingDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+    const workingTimes = '10:00 am - 9:00 pm';
+
     useEffect(() => {
       window.scrollTo(0, 0);
     }, [])
@@ -112,7 +115,20 @@ function CourseDetails() {
           {/* working hours */}
 
           <div className='working-hours'>
-            working hours
+            <div className='working-hours-title'>working hours</div>
+            <div className='days-times'>
+              <div className='days'>
+                {
+                  workingDays.map((days, index)=> <div
+                    key={index}
+                    className='days-hours'
+                  >
+                    <p>{days}</p>
+                    <p>{workingTimes}</p>
+                  </div>)
+                }
+              </div>
+            </div>
           </div>
         </div>
       </div>
