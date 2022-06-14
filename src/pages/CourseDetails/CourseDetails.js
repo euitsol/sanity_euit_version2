@@ -2,7 +2,10 @@ import { faAngleRight, faAward, faBookmark, faCalendarWeek, faChartColumn, faClo
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import useCourseDetails from '../../Hooks/useCourseDetails'
+import { addToDb } from '../../utilities/localstorage';
 import ContactUs from '../ContactUs/ContactUs'
 import Loading from '../Loading/Loading'
 import './CourseDetails.css'
@@ -21,6 +24,13 @@ function CourseDetails() {
     const workingDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
     const workingTimes = '10:00 am - 9:00 pm';
 
+    // add to cart functionality
+    const addToCart = (slug)=>{
+      console.log(slug)
+      toast(course_prod[0]?.course_name+" Added to cart");
+      addToDb(slug)
+    }
+
     useEffect(() => {
       window.scrollTo(0, 0);
     }, [])
@@ -32,6 +42,7 @@ function CourseDetails() {
 
   return (
     <div>
+      
       <h1 className='course-details-title'>{courseDetails?.course_prod[0]?.course_name}</h1>  
       <div className='course-details-container'>
         <div className='course-details'>
@@ -101,7 +112,7 @@ function CourseDetails() {
             <img src={courseImage?courseImage:''} alt='european it'></img>
             <div className='cart-details'>
               <h3 className='course-price'>$9000</h3>
-              <button className='add-to-cart-btn'>Add to Cart</button>
+              <button className='add-to-cart-btn' onClick={()=>addToCart(slug)}>Add to Cart</button>
               <p className='add-to-cart-info'><FontAwesomeIcon className='icon' icon={faChartColumn}></FontAwesomeIcon>Skill Level: Beginner</p>
               <p className='add-to-cart-info'><FontAwesomeIcon className='icon' icon={faClock}></FontAwesomeIcon>Duration: 02 hours</p>
               <p className='add-to-cart-info'><FontAwesomeIcon className='icon' icon={faCalendarWeek}></FontAwesomeIcon>Class Per Week: 2 Days</p>
@@ -133,6 +144,7 @@ function CourseDetails() {
         </div>
       </div>
       <ContactUs></ContactUs>
+      <ToastContainer />
     </div>
   )
 }

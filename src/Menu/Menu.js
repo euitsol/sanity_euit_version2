@@ -97,6 +97,7 @@ function Menu() {
             </li>
             <li><a href="/">News</a></li>
             <li><Link to="/contact-us">Contact us</Link></li>
+            <li><Link to="/cart">Cart</Link></li>
           </ul>
           <label htmlFor="menu-btn" className="btn menu-btn"><i className="fas fa-bars"></i></label>
         </div>

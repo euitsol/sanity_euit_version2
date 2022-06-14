@@ -18,6 +18,7 @@ import Events from './Events/Events';
 import CourseDetails from './pages/CourseDetails/CourseDetails';
 import NotFound from './pages/NotFound/NotFound';
 import AdmissionForm from './pages/AdmissionForm/AdmissionForm';
+import Cart from './pages/Cart/Cart';
 
 
 function App() {
@@ -40,7 +41,9 @@ function App() {
         <Route path='/events' element={<Events></Events>}></Route>
         <Route path='/course/:slug' element={<CourseDetails></CourseDetails>}></Route>
         <Route path='/admission-now' element={<AdmissionForm></AdmissionForm>}></Route>
+        <Route path='/cart' element={<Cart></Cart>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
+
       </Routes>
       <Footer></Footer>
     </div>
