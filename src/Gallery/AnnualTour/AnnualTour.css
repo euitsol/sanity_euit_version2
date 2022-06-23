@@ -34,3 +34,11 @@
     height: 300px;
     margin: 10px;
 }
+
+@media screen and (max-width:1024px) {
+    .annual-tour-title{
+        padding-left: 10px;
+    }
+    
+    
+}

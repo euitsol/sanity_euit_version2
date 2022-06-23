@@ -18,3 +18,11 @@
     height: 300px;
     margin: 10px;
 }
+
+@media screen and (max-width:1024px) {
+    .office-environment-title{
+        padding-left: 10px;
+    }
+    
+    
+}

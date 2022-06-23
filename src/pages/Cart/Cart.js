@@ -6,7 +6,7 @@ import './Cart.css'
 
 function Cart() {
   const [courses, loading, error, course_prod] = useCourses();
-  const [cart, setCart] = useState([])
+  const [cart, setCart] = useState([]);
   useEffect(()=>{
     const cartitem = getStoredCart();
     const savedCart = []
@@ -31,6 +31,14 @@ function Cart() {
       const remainingData = cart.filter(cartitem=> cartitem.slug.current != slug);
       setCart(remainingData);
     }
+    // var totalPrice = 0
+    // cart?.forEach(element => {
+    //   setTotalBill(totalPrice += element.course_price)
+    // });
+    // console.log(totalBill)
+    let totalBill = cart.reduce(function(prev, current) {
+      return prev + +current.course_price
+    }, 0);
 
   return (
     <div>
@@ -51,6 +59,7 @@ function Cart() {
           <p>${course.course_price}</p>
         </div>)
         }
+        <p className='total-bill'>total ${totalBill}</p>
         </div>
     </div>
   )

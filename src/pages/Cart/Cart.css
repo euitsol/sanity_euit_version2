@@ -23,3 +23,9 @@
 .cart-card .course-img{
     width: 130px;
 }
+
+.total-bill{
+    font-size: 20px;
+    border-top: 2px solid rgba(102, 101, 101, 0.534);
+    text-align: right;
+}
