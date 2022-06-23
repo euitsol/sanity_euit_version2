@@ -16,16 +16,18 @@ function Header() {
               <div className="phone-number">
                   <FontAwesomeIcon className='icon' icon={faMobileAlt}></FontAwesomeIcon>
                   <div className="number">
-                      <p>here your phone number</p>
-                      <p>here your phone number</p>
+                    <a href="tel:555123456789">0123456789</a>
+                    <br></br>
+                    <a href="tel:555123456789">0123456789</a>
                   </div>
               </div>
               {/* email section */}
               <div className="mail-section">
                   <FontAwesomeIcon className='icon' icon={faEnvelope}></FontAwesomeIcon>
                   <div className="mail">
-                      <p>here your email</p>
-                      <p>here your email</p>
+                    <a href="mailto:my@email.com">my@email.com</a>
+                    <br></br>
+                    <a href="mailto:my@email.com">my@email.com</a>
                   </div>
               </div>
              

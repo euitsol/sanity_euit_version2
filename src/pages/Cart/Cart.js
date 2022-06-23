@@ -37,17 +37,21 @@ function Cart() {
       <div className='cart-title'>
         <p>Cart</p>
       </div>
-      <div className='cart-items'>
+        <div className='cart-items'>
         {
           cart.map((course, i)=><div className='cart-card'>
           <img className='course-img' src={course.image.asset.url}></img>
-          <p className='course-name-cart'>{course.course_name}</p>
-          <p>{course.course_price}</p>
-          <input type="number" id="quantity" name="quantity" min="0" max="100" step="1" value={course.quantity} />
-          <button onClick={()=>deleteHandler(course.slug.current)} className='cart-item-delete-btn'>Delete</button>
+          <div className='middle-section'>
+            <p className='course-name-cart'>{course.course_name}</p>
+            <div className='quantity-delete'>
+              <input type="number" name="quantity" min='1' max='10' value={course.quantity} ></input>
+              <button onClick={() => deleteHandler(course.slug.current)} className='cart-item-delete-btn'>Delete</button>
+            </div>
+          </div>
+          <p>${course.course_price}</p>
         </div>)
         }
-      </div>
+        </div>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import { faAngleDown, faAngleRight, faArrowDown } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDown, faAngleRight, faArrowDown, faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { Link } from 'react-router-dom'
@@ -97,11 +97,11 @@ function Menu() {
             </li>
             <li><a href="/">News</a></li>
             <li><Link to="/contact-us">Contact us</Link></li>
-            <li><Link to="/cart">Cart</Link></li>
           </ul>
           <label htmlFor="menu-btn" className="btn menu-btn"><i className="fas fa-bars"></i></label>
         </div>
       <button className='admission-now-btn'><Link to='/admission-now' className='admission-now-btn-link'>Admission Now</Link></button>
+      <li className='cart-icon'><Link to="/cart"><FontAwesomeIcon className='cart-icon' icon={faCartShopping}></FontAwesomeIcon></Link></li>
       </div>
         </nav>
   )

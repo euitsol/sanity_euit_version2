@@ -9,16 +9,17 @@
     font-weight: bold;
 }
 .cart-items{
-    width: 80%;
+    width: 65%;
     margin: 0 auto;
 }
 .cart-card{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 10px 0;
     background-color: #d1d1d1;
     padding: 10px;
 }
 .cart-card .course-img{
-    width: 50px;
+    width: 130px;
 }

@@ -25,12 +25,12 @@
 .basis-logo img{
     width: 150px;
 }
-.number p, .mail p{
+.number a, .mail a{
     font-size: 18px;
     font-weight: bold;
     color: #486d8a;
-    cursor: pointer;
     margin: 0;
+    text-decoration: none;
 }
 .banner img{
     width: 100%;
