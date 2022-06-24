@@ -41,6 +41,31 @@ const removeFromDb = slug =>{
     }
 }
 
+// decrease quantity from localstorage
+
+const decreaseValue = slug =>{
+    const storedCart = localStorage.getItem('shopping-cart');
+    if(storedCart){
+        const shoppingCart = JSON.parse(storedCart);
+        if(shoppingCart[slug]>0){
+            shoppingCart[slug] -= 1;
+            localStorage.setItem('shopping-cart', JSON.stringify(shoppingCart));
+        } 
+    }
+}
+
+// increase quantity from localstorage
+
+const increaseValue = slug =>{
+    const storedCart = localStorage.getItem('shopping-cart');
+    if(storedCart){
+        const shoppingCart = JSON.parse(storedCart);
+        
+        shoppingCart[slug] += 1;
+        localStorage.setItem('shopping-cart', JSON.stringify(shoppingCart));
+    }
+}
+
 const deleteShoppingCart = () =>{
     localStorage.removeItem('shopping-cart');
 }
@@ -49,5 +74,7 @@ export {
     addToDb, 
     getStoredCart,
     removeFromDb,
-    deleteShoppingCart
+    deleteShoppingCart,
+    decreaseValue,
+    increaseValue
 }

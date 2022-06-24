@@ -1,10 +1,12 @@
 import { faAngleDown, faAngleRight, faArrowDown, faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { getStoredCart } from '../utilities/localstorage'
 import './Menu.css'
 
 function Menu() {
+
   return (
     <nav>
       <div className="wrapper">
@@ -101,7 +103,7 @@ function Menu() {
           <label htmlFor="menu-btn" className="btn menu-btn"><i className="fas fa-bars"></i></label>
         </div>
       <button className='admission-now-btn'><Link to='/admission-now' className='admission-now-btn-link'>Admission Now</Link></button>
-      <li className='cart-icon'><Link to="/cart"><FontAwesomeIcon className='cart-icon' icon={faCartShopping}></FontAwesomeIcon></Link></li>
+      <li className='cart-icon'><Link to="/cart"><FontAwesomeIcon className='cart-icon' icon={faCartShopping}></FontAwesomeIcon></Link><sup>2</sup></li>
       </div>
         </nav>
   )
