@@ -20,6 +20,7 @@ function CourseDetails() {
     const highlight = options[0]?.highlight;
     const careerSupport = options[0]?.career_support;
     const courseImage = options[0]?.image?.asset?.url;
+    const coursePrice = options[0]?.course_price;
 
     const workingDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
     const workingTimes = '10:00 am - 9:00 pm';
@@ -111,7 +112,7 @@ function CourseDetails() {
           <div className='add-to-cart'>
             <img src={courseImage?courseImage:''} alt='european it'></img>
             <div className='cart-details'>
-              <h3 className='course-price'>$9000</h3>
+              <h3 className='course-price'>${coursePrice}</h3>
               <button className='add-to-cart-btn' onClick={()=>addToCart(slug)}>Add to Cart</button>
               <p className='add-to-cart-info'><FontAwesomeIcon className='icon' icon={faChartColumn}></FontAwesomeIcon>Skill Level: Beginner</p>
               <p className='add-to-cart-info'><FontAwesomeIcon className='icon' icon={faClock}></FontAwesomeIcon>Duration: 02 hours</p>

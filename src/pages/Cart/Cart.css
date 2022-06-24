@@ -17,7 +17,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 10px 0;
-    background-color: #d1d1d1;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 10px;
 }
 .cart-card .course-img{
@@ -31,7 +31,7 @@
 
 .total-bill{
     font-size: 20px;
-    border-top: 2px solid rgba(102, 101, 101, 0.534);
+    border-top: 2px solid rgba(177, 177, 177, 0.534);
     text-align: right;
 }
 .quantity-options{
@@ -40,6 +40,43 @@
     
 }
 
+
 .qunatity h2{
     display: block;
 }
+.quantity-options button{
+    background-color: #00AEEF;
+    outline: none;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.cart-item-delete-btn{
+    background-color: rgb(250, 31, 31);
+    color: white;
+    padding: 7px 25px;
+    border: none;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+
+.quantity-options p{
+    margin: 0 15px;
+}
+.checkout{
+    margin: 30px 0;
+    text-align: right;
+    width: 82%;
+}
+
+.checkout-btn{
+    background-color: #00AEEF;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: right;
+}
+

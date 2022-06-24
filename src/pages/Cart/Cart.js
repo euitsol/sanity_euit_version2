@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 import useCourses from '../../Hooks/useCourses';
 import { decreaseValue, getStoredCart, increaseValue, removeFromDb } from '../../utilities/localstorage'
 import Loading from '../Loading/Loading';
@@ -10,21 +11,20 @@ function Cart() {
   console.log(cart);
   useEffect(()=>{
     const cartitem = getStoredCart();
-    const savedCart = []
+    const savedCart = [];
     console.log(savedCart);
     for (const slug in cartitem){
       const addedData = course_prod?.find(course=>course?.slug?.current === slug);
-      
       let qty = cartitem[slug];
       if(addedData){
-        let price = cartitem[slug]
+        addedData.course_price *= qty;
         addedData.quantity = qty;
         savedCart.push(addedData);
       }
       setCart(savedCart);
     }
         
-  }, [courses]);
+  }, [course_prod]);
 
 
   if(loading){
@@ -69,7 +69,7 @@ function Cart() {
           <div className='middle-section'>
             <div className='quantity-delete'>
               <div className='qunatity'>
-                <p>qty</p>
+                <p>Qunatity</p>
                 <div className='quantity-options'>
                   <button onClick={()=> deleteItem(course.slug.current)}>-</button>
                   <p>{course.quantity}</p>
@@ -83,6 +83,9 @@ function Cart() {
         </div>)
         }
         <p className='total-bill'>total ${totalBill}</p>
+        </div>
+        <div className='checkout'>
+          <Link className='checkout-btn' to='/checkout'><a>Click to Checkout</a></Link>
         </div>
     </div>
   )
