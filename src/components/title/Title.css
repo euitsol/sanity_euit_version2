@@ -1,0 +1,17 @@
+.title{
+    text-align: start;
+    color: #3C6382;
+    background-color: #F8F8F8;
+    padding: 40px 0;
+    padding-left: 300px;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width:1024px) {
+    .title{
+        padding-left: 10px;
+    }
+    
+    
+}

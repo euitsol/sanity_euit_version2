@@ -4,11 +4,12 @@ import ceo from '../../images/images.jpg'
 import Facilities from '../../Facilities/Facilities'
 import Welcome from '../../Welcome/Welcome'
 import ContactUs from '../ContactUs/ContactUs'
+import Title from '../../components/title/Title'
 
 function Aboutus() {
   return (
     <div>
-        <h1 className='about-us-title'>About Us</h1>
+        <Title value='About Us'></Title>
         <Welcome></Welcome>
         <div className='founder-section'>
             <div className='card'>
