@@ -6,7 +6,7 @@ function Checkout() {
     <div>
       <Title value='Checkout'></Title>
       <section className='admision-form'>
-        <div className='admission-top-title'>Personal & Contact Information</div>
+        <div className='admission-top-title'>Billing details</div>
         <form>
             {/* name input */}
             <label>
