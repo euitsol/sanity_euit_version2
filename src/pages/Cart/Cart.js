@@ -8,16 +8,13 @@ import './Cart.css'
 function Cart() {
   const [courses, loading, error, course_prod] = useCourses();
   const [cart, setCart] = useState([]);
-  console.log(cart);
   useEffect(()=>{
     const cartitem = getStoredCart();
     const savedCart = [];
-    console.log(savedCart);
     for (const slug in cartitem){
       const addedData = course_prod?.find(course=>course?.slug?.current === slug);
       let qty = cartitem[slug];
       if(addedData){
-        addedData.course_price *= qty;
         addedData.quantity = qty;
         savedCart.push(addedData);
       }
@@ -30,16 +27,6 @@ function Cart() {
   if(loading){
     return <Loading></Loading>
   }
-  // increase quantity 
-  const addItem = slug =>{
-    increaseValue(slug)
-  }
-
-  // decrease quantity 
-  const deleteItem = slug =>{
-    decreaseValue(slug)
-  }
-
 
   // delete from cart 
   const deleteHandler = slug=>{
@@ -62,30 +49,25 @@ function Cart() {
         <p>Cart</p>
       </div>
         <div className='cart-items'>
-        {
-          cart.map((course, i)=><div key={i} className='cart-card'>
-          <img className='course-img' src={course.image.asset.url}></img>
-            <p className='course-name-cart'>{course.course_name}</p>
-          <div className='middle-section'>
-            <div className='quantity-delete'>
-              <div className='qunatity'>
-                <p>Qunatity</p>
-                <div className='quantity-options'>
-                  <button onClick={()=> deleteItem(course.slug.current)}>-</button>
-                  <p>{course.quantity}</p>
-                  <button onClick={()=> addItem(course.slug.current)}>+</button>
+          {
+            cart.map((course, i)=><div key={i} className='cart-card'>
+            <img className='course-img' src={course.image.asset.url}></img>
+              <p className='course-name-cart'>{course.course_name}</p>
+            <div className='middle-section'>
+              <div className='quantity-delete'>
+                <div className='qunatity'>
+                
+                    <button onClick={() => deleteHandler(course.slug.current)} className='cart-item-delete-btn'>Remove</button>
                 </div>
-                  <button onClick={() => deleteHandler(course.slug.current)} className='cart-item-delete-btn'>Delete</button>
               </div>
             </div>
-          </div>
-          <p>${course.course_price}</p>
-        </div>)
-        }
-        <p className='total-bill'>total ${totalBill}</p>
+            <p>${course.course_price}</p>
+          </div>)
+          }
+          <p className='total-bill'>total ${totalBill}</p>
         </div>
         <div className='checkout'>
-          <Link className='checkout-btn' to='/checkout'><a>Click to Checkout</a></Link>
+          <Link className='checkout-btn' to='/cart/checkout'><a>Click to Checkout</a></Link>
         </div>
     </div>
   )

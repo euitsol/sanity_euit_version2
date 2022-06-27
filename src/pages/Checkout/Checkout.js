@@ -1,4 +1,5 @@
 import React from 'react'
+import CountrySelector from '../../components/CountrySelector/CountrySelector'
 import Title from '../../components/title/Title'
 
 function Checkout() {
@@ -74,6 +75,10 @@ function Checkout() {
                     <p>Email<sup className='star'>*</sup></p>
                     <input type="text" placeholder="Enter your Email id" required />
                 </label>
+                <div>
+                    <p>Country<sup className='star'>*</sup></p>
+                    <CountrySelector></CountrySelector>
+                </div>
             </div>
 
             <br></br>

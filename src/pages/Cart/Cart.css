@@ -18,7 +18,8 @@
     align-items: center;
     margin: 10px 0;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 .cart-card .course-img{
     width: 130px;
@@ -60,6 +61,7 @@
     border: none;
     margin-top: 5px;
     border-radius: 3px;
+    cursor: pointer;
 }
 
 .quantity-options p{
