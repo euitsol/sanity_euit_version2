@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import useCourses from '../../Hooks/useCourses';
-import { decreaseValue, getStoredCart, increaseValue, removeFromDb } from '../../utilities/localstorage'
+import { getStoredCart, removeFromDb } from '../../utilities/localstorage'
 import Loading from '../Loading/Loading';
 import './Cart.css'
 
@@ -27,6 +27,9 @@ function Cart() {
   if(loading){
     return <Loading></Loading>
   }
+  if(error){
+    return <p>error loading page</p>
+  }
 
   // delete from cart 
   const deleteHandler = slug=>{
@@ -51,12 +54,11 @@ function Cart() {
         <div className='cart-items'>
           {
             cart.map((course, i)=><div key={i} className='cart-card'>
-            <img className='course-img' src={course.image.asset.url}></img>
+            <img className='course-img' src={course.image.asset.url} alt={course.course_name}></img>
               <p className='course-name-cart'>{course.course_name}</p>
             <div className='middle-section'>
               <div className='quantity-delete'>
                 <div className='qunatity'>
-                
                     <button onClick={() => deleteHandler(course.slug.current)} className='cart-item-delete-btn'>Remove</button>
                 </div>
               </div>
