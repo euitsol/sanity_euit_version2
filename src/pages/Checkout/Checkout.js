@@ -1,8 +1,40 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import CountrySelector from '../../components/CountrySelector/CountrySelector'
 import Title from '../../components/title/Title'
+import useCourses from '../../Hooks/useCourses';
+import { getStoredCart } from '../../utilities/localstorage';
+import Loading from '../Loading/Loading';
+import './Checkout.css'
 
 function Checkout() {
+    const [courses, loading, error, course_prod] = useCourses();
+  const [cart, setCart] = useState([]);
+  console.log(cart)
+  useEffect(()=>{
+    const cartitem = getStoredCart();
+    const savedCart = [];
+    for (const slug in cartitem){
+      const addedData = course_prod?.find(course=>course?.slug?.current === slug);
+      let qty = cartitem[slug];
+      if(addedData){
+        addedData.quantity = qty;
+        savedCart.push(addedData);
+      };
+      setCart(savedCart);
+    };
+        
+  }, [course_prod]);
+  let totalBill = cart.reduce(function(prev, current) {
+    return prev + +current.course_price
+  }, 0);
+
+
+  if(loading){
+    return <Loading></Loading>
+  }
+  if(error){
+    return <p>error loading page</p>
+  }
   return (
     <div>
       <Title value='Checkout'></Title>
@@ -79,12 +111,36 @@ function Checkout() {
                     <p>Country<sup className='star'>*</sup></p>
                     <CountrySelector></CountrySelector>
                 </div>
+                <br></br>
+                <div class="table-users">
+   
+                <table cellspacing="0">
+                    <tr>
+                        <th>Photo</th>
+                        <th>Product name</th>
+                        <th>Price</th>
+                    </tr>
+
+
+                        {
+                            cart.map((product, i)=><tr>
+                                <td><img className='checkout-img' src={product.image.asset.url} alt="" /></td>
+                                <td>{product.course_name}</td>
+                                <td>{product.course_price}</td>
+                            </tr>)
+                        }
+
+
+                </table>
+            <h3 style={{textAlign:'right', margin:'10px', borderTop:'2px solid #e1e1e1'}}>Total: ${totalBill}</h3>
+            </div>
             </div>
 
             <br></br>
             <input type="submit" value="Submit" className='submit-button' />
         </form>
       </section>
+     
     </div>
   )
 }

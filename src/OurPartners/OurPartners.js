@@ -2,9 +2,11 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import './OurPartners.css'
 import usePartners from "../Hooks/usePartners";
-import partners from '../images/microsoft-logo.png'
+import partnersimg from '../images/microsoft-logo.png'
+
 
 export default class OurPartner extends Component {
+  
   render() {
     var settings = {
       dots: true,
@@ -47,28 +49,28 @@ export default class OurPartner extends Component {
         <h2> Our Partners </h2>
         <Slider {...settings}>
           <div>
-            <img src={partners} alt='partner'></img>
+            <img src={partnersimg} alt='partner'></img>
           </div>
           <div>
-          <img src={partners} alt='partner'></img>
+          <img src={partnersimg} alt='partner'></img>
           </div>
           <div>
-          <img src={partners} alt='partner'></img>
+          <img src={partnersimg} alt='partner'></img>
           </div>
           <div>
-          <img src={partners} alt='partner'></img>
+          <img src={partnersimg} alt='partner'></img>
           </div>
           <div>
-          <img src={partners} alt='partner'></img>
+          <img src={partnersimg} alt='partner'></img>
           </div>
           <div>
-          <img src={partners} alt='partner'></img>
+          <img src={partnersimg} alt='partner'></img>
           </div>
           <div>
-          <img src={partners} alt='partner'></img>
+          <img src={partnersimg} alt='partner'></img>
           </div>
           <div>
-          <img src={partners} alt='partner'></img>
+          <img src={partnersimg} alt='partner'></img>
           </div>
         </Slider>
       </div>

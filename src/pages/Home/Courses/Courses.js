@@ -11,10 +11,7 @@ function Courses() {
   }
   return (
     <div className='courses-container'>
-          <div className="title">
-            <p className='popular-text'>MOST POPULAR</p>
-            <h1 className='course-program-text'>Course Programs</h1>
-          </div>
+         
           <div className="cards">
               {
                 courses.course_prod.map((course, i) => <SingleCourseDesign key={i} course={course}></SingleCourseDesign>)

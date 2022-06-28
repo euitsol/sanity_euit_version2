@@ -17,7 +17,7 @@ function Menu() {
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/about-us'>About Us</Link></li>
             <li>
-              <a href="/" className="desktop-item">Courses <FontAwesomeIcon className='arrow-right' icon={faAngleDown} /></a>
+              <a className="desktop-item">Courses <FontAwesomeIcon className='arrow-right' icon={faAngleDown} /></a>
               <input type="checkbox" id="showMega" />
               <label htmlFor="showMega" className="mobile-item">Courses </label>
               <div className="mega-box">

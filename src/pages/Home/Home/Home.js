@@ -38,6 +38,10 @@ function Home() {
           </div>
         </div>
         <Welcome></Welcome>
+        <div className="title">
+            <p className='popular-text'>MOST POPULAR</p>
+            <h1 className='course-program-text'>Course Programs</h1>
+          </div>
         <Courses></Courses>
         <Facilities></Facilities>
         <JobPLacement></JobPLacement>

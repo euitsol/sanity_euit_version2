@@ -20,6 +20,7 @@ import NotFound from './pages/NotFound/NotFound';
 import AdmissionForm from './pages/AdmissionForm/AdmissionForm';
 import Cart from './pages/Cart/Cart';
 import Checkout from './pages/Checkout/Checkout';
+import AllCourses from './pages/AllCourses/AllCourses';
 
 
 function App() {

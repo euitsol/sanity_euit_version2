@@ -22,6 +22,7 @@
     "react-select-country-list": "^2.2.3",
     "react-slick": "^0.29.0",
     "react-toastify": "^9.0.4",
+    "rerousel": "^0.1.9",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
