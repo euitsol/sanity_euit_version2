@@ -10,7 +10,7 @@ function Facilities() {
             <p className='facilities-title'>European It</p>
             <h1 className='facilities-text'>Facilities</h1>
             <div className='facility-container'>
-                {facilities.map(facility => <Facility key={facility.id} facility={facility}></Facility>)}
+                {facilities.map((facility, i) => <Facility key={i} facility={facility}></Facility>)}
             </div>
       </div>
   )

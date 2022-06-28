@@ -7,7 +7,7 @@ function Facility(props) {
     const { icon, title, details } = props.facility;
   return (
       <div className='facility'>
-          <FontAwesomeIcon icon={faClockRotateLeft} />
+          <i className={icon}></i>
           <h2 className='facility-title'>{title}</h2>
           <p className='facility-detail'>{details }</p>
     </div>
