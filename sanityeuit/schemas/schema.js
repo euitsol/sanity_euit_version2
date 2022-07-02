@@ -8,6 +8,8 @@ import our_partners from './our_partners'
 import facilities from './facilities'
 import students_success from './students_success'
 import professionals_opinion from './professionals_opinion'
+import video_feedback from './video_feedback'
+import written_feedback from './written_feedback'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -21,6 +23,9 @@ export default createSchema({
     our_partners,
     facilities,
     students_success,
-    professionals_opinion
+    professionals_opinion,
+    video_feedback,
+    written_feedback
+
   ]),
 })
