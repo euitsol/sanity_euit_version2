@@ -4,6 +4,7 @@ import useCourses from '../../Hooks/useCourses';
 import { getStoredCart, removeFromDb } from '../../utilities/localstorage'
 import Loading from '../Loading/Loading';
 import './Cart.css'
+import EmptyCart from './EmptyCart';
 
 function Cart() {
   const [courses, loading, error, course_prod] = useCourses();
@@ -43,7 +44,7 @@ function Cart() {
   }, 0);
 
   if(cart.length < 1){
-    return <p>cart is empty</p>
+    return <EmptyCart></EmptyCart>
   }
 
   return (
