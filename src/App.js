@@ -21,6 +21,7 @@ import AdmissionForm from './pages/AdmissionForm/AdmissionForm';
 import Cart from './pages/Cart/Cart';
 import Checkout from './pages/Checkout/Checkout';
 import AllCourses from './pages/AllCourses/AllCourses';
+import WrittenFeedback from './pages/WrittenFeedback/WrittenFeedback';
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
         <Route path='/cart/checkout' element={<Checkout></Checkout>}></Route>
         <Route path='/admission-now' element={<AdmissionForm></AdmissionForm>}></Route>
         <Route path='/cart' element={<Cart></Cart>}></Route>
+        <Route path='/written-feedback' element={<WrittenFeedback></WrittenFeedback>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
 
       </Routes>

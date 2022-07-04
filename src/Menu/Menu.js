@@ -75,7 +75,7 @@ function Menu() {
               <ul className="drop-menu">
                 <li className='succes-stories-item'><Link to="/">Student's Success</Link></li>
                 <li className='succes-stories-item'><Link to="/">Professionals Expert Opinion</Link></li>
-                <li className='succes-stories-item'><Link to="/">Written Feedback</Link></li>
+                <li className='succes-stories-item'><Link to="/written-feedback">Written Feedback</Link></li>
                 <li className='succes-stories-item'><Link to="/">Video Feedback</Link></li>
               </ul>
             </li>
