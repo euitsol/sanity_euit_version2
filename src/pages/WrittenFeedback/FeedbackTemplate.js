@@ -1,14 +1,21 @@
 import React from 'react'
+import StarRatingComponent from 'react-star-rating-component';
+import './FeedbackTemplate.css'
 
 function FeedbackTemplate(props) {
     const {feedback} = props;
   return (
-    <div className='card'>
+    <div className='feedback-card'>
         <div className='image'>
             <img src={feedback?.image.asset.url}></img>
-            <p>{feedback.rating}</p>
+            <h3>{feedback.name}</h3>
+            <StarRatingComponent 
+          name="rate1" 
+          starCount={5}
+          value={feedback.rating}
+        />
         </div>
-        <div className='text'>
+        <div className='card-message'>
             <p>{feedback.message}</p>
         </div>
     </div>

@@ -1,0 +1,10 @@
+.written-feedback-container{
+    width: 80%;
+    margin: 0 auto;
+}
+.written-feedback-top{
+    color: #3c6382;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 20px;
+}
